@@ -8,7 +8,7 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-//STUDENT
+ //STUDENT
 //GET
 Route::get('/students', [StudentController::class, 'index']);
 //POST
